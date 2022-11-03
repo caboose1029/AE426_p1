@@ -9,17 +9,17 @@
 tmax = 3*pi;
 t = linspace(0,tmax,1000);
 
-Wx = sin(6*t);
-Wy = cos(6*t);
+Wx = cos(2*t);
+Wy = -sin(2*t);
 Wz = 3*ones(size(t));
 
 figure(3);
 
 hold on;
 
-plot(t,Wx, '-b'); 
-plot(t,Wy, '-r');
-plot(t,Wz, '-g');
+plot(t,Wx*180/pi, '-b'); 
+plot(t,Wy*180/pi, '-r');
+plot(t,Wz*180/pi,'-g');
 
 % xlim([0 tmax]);
 % ylim([-90 90]);
